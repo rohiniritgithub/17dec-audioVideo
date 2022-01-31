@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		video
+		{
+			width: 400px;
+			height: 300px;
+			border: 2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<video id="vd1" controls>
+		<source src="videoCritmas.mp4" ></source>
+	</video>
+	<br><br>
+	<input type="button" value="play video" onclick="fun1()">
+	<input type="button" value="pause video" onclick="fun2()">
+	<input type="button" value="current video" onclick="fun3()">
+
+
+
+
+
+	<script type="text/javascript">
+		vd1=document.getElementById("vd1");
+		function fun1()
+		{
+			vd1.play();
+		}
+		function fun2()
+		{
+			vd1.pause();
+		}
+		function fun3()
+		{
+			alert(vd1.currentTime);
+		}
+	</script>
+
+</body>
+</html>
